@@ -97,7 +97,7 @@ const loadCharacters = async () => {
         const res = await fetch('https://jsonkeeper.com/b/3SP1'); // if link dont work us >> 'https://hp-api.herokuapp.com/api/characters'
         hpCharacters = await res.json();
         displayCharacters(hpCharacters);
-
+        
     } catch (err) {
         console.error(err);
     }
