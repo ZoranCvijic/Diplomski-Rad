@@ -1,0 +1,202 @@
+html {
+    scroll-behavior: smooth;
+  }
+header {
+    max-width: 100vw;
+}
+.top-title {
+    margin: 70px 0 110px ;
+}
+.btn  {
+    margin-top:30px ;
+}
+.rounded {
+    max-height: 150px !important;
+}
+#top {
+    background: rgb(212, 212, 236);
+}
+#left {
+    padding: 25px;
+    margin-top: 50px;
+}
+#right {
+    padding: 25px;
+    margin-top: 50px;
+}
+.wrap {
+    background: rgb(212, 212, 236);
+    min-height: 100vh;
+    text-align: center;
+}
+
+#searchWrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.container h1 {
+    padding-bottom: 5px;
+}
+
+#charactersList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.character {
+    position: relative;
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    opacity: 0.8;
+    min-height: 210px;
+}
+.text-secondary {
+    display: inline;
+}
+.text-info{
+    margin-top: 15px;
+    max-width: 200px;
+}
+.img-thumbnail {
+    max-width: 150px;
+    max-height: 150px;
+}
+.rounded {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    grid-area: image;
+    opacity: 1;
+    width: 100px;
+    height: 140px;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+footer {
+    position: relative;
+}
+.social-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+#myBtn {
+    border: none; 
+    outline: none; 
+    background-color: #3b5999; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 25px; 
+    line-height: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(0,0px);
+    transition: 0.7s;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    color: #000000;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(208, 208, 208); /* Add a dark-grey background on hover */
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+  #myBtn2 {
+    float: left;
+    border: none; 
+    outline: none; 
+    background-color: #3b5999; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 25px; 
+    line-height: 25px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(0px,0px);
+    transition: 0.7s;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    color: #000000;
+  }
+  
+  #myBtn2:hover {
+    background-color: rgb(208, 207, 207); /* Add a dark-grey background on hover */
+    transform: rotate(0deg) skew(0deg) translate(0, 10px);
+  }
